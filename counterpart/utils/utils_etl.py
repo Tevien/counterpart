@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import logging
 
-logger = logging.getLogger('luigi-interface')
+logger = logging.getLogger(__name__)
 
 def first_non_nan(x):
     return x[np.isfinite(x)][0]
